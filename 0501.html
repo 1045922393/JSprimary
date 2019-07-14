@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>利率</title>
+     <style>
+        body {
+            background-color: aqua;
+            color: darkorange;
+            text-shadow: 1px 1px 5px slateblue;
+            opacity: 0.6;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+   
+    <script>
+          // 本金10000元存入银行，年利率是千分之三，每过1年，将本金和利息相加作为新的本金。计算5年后，获得的本金是多少？
+          var total = 10000;
+          for(i=1;i<=5;i++){
+              total=total+ total*0.003;
+          }
+          document.write(total+'<br>'+10150.90270405243);
+    </script>
+</body>
+</html>
